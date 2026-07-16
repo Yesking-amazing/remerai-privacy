@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>RemerAI — Privacy Policy</title>
+<meta name="description" content="How RemerAI collects, uses, and protects your data.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,600;1,6..72,400&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #F4EEDF;
+    --card: #FCF8EE;
+    --ink: #1E1A12;
+    --muted: #7E7058;
+    --accent: #4842B5;
+    --hair: rgba(30, 26, 18, 0.12);
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #15120D;
+      --card: #211D14;
+      --ink: #F4ECD8;
+      --muted: #8B7F66;
+      --accent: #A39BF1;
+      --hair: rgba(244, 236, 216, 0.14);
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    padding: 0 20px 96px;
+    background: var(--bg);
+    color: var(--ink);
+    font-family: "Newsreader", Georgia, "Times New Roman", serif;
+    font-size: 18px;
+    line-height: 1.65;
+    -webkit-font-smoothing: antialiased;
+  }
+  .wrap { max-width: 680px; margin: 0 auto; }
+  header {
+    padding: 64px 0 32px;
+    border-bottom: 1px solid var(--hair);
+    margin-bottom: 40px;
+  }
+  .eyebrow {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 1.8px;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin: 0 0 10px;
+  }
+  h1 { font-size: 42px; line-height: 1.1; margin: 0 0 12px; letter-spacing: -0.6px; font-weight: 600; }
+  .updated { color: var(--muted); font-style: italic; margin: 0; font-size: 16px; }
+  h2 {
+    font-size: 25px;
+    font-weight: 600;
+    letter-spacing: -0.3px;
+    margin: 44px 0 12px;
+    padding-top: 8px;
+  }
+  p { margin: 0 0 16px; }
+  ul { margin: 0 0 16px; padding-left: 22px; }
+  li { margin-bottom: 10px; }
+  strong { font-weight: 600; }
+  a { color: var(--accent); text-decoration-thickness: 1px; text-underline-offset: 2px; }
+  .callout {
+    background: var(--card);
+    border: 1px solid var(--hair);
+    border-left: 3px solid var(--accent);
+    border-radius: 12px;
+    padding: 18px 20px;
+    margin: 24px 0;
+  }
+  .callout p:last-child { margin-bottom: 0; }
+  footer {
+    margin-top: 56px;
+    padding-top: 24px;
+    border-top: 1px solid var(--hair);
+    color: var(--muted);
+    font-size: 15px;
+    font-style: italic;
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <p class="eyebrow">RemerAI</p>
+    <h1>Privacy Policy</h1>
+    <p class="updated">Last updated: July 2026</p>
+  </header>
+
+  <p>RemerAI (“the app”, “we”, “us”) is a personal memory and relationship app. You write short notes about people you meet, and the app uses AI to help organize them into profiles, threads, reminders, and connections. This policy explains what we collect, how it’s used, and the choices you have.</p>
+
+  <h2>What we collect</h2>
+  <p>When you use RemerAI, the following is stored in your account:</p>
+  <ul>
+    <li><strong>Account info</strong> — your email address (for sign-in) and authentication tokens.</li>
+    <li><strong>Your entries</strong> — the journal/log text you write.</li>
+    <li><strong>Derived data</strong> — people, threads (tags), groups, relationships, important dates, reminders, AI-generated summaries, and mood notes extracted from your entries.</li>
+    <li><strong>Profile pictures</strong> — any photos you add to a person, stored in our file storage.</li>
+    <li><strong>Voice notes</strong> — if you use voice capture, audio is transcribed to text on your device; the transcript is saved as entry text.</li>
+  </ul>
+  <p>We do <strong>not</strong> collect advertising identifiers, location, contacts, or browsing activity. We do not sell your data.</p>
+
+  <h2>How your data is used</h2>
+  <ul>
+    <li>To provide the core app: storing, organizing, and showing your memories.</li>
+    <li>To run AI features: when you save an entry, its text is sent to <strong>OpenAI</strong> to extract people, threads, dates, reminders, and to generate profile summaries and power semantic search.</li>
+  </ul>
+
+  <h2>Third parties who process your data</h2>
+  <ul>
+    <li><strong>Supabase</strong> — our backend host. Stores your account, entries, and files. Data is encrypted in transit (TLS) and at rest (AES-256). Access is restricted per-user via row-level security.</li>
+    <li><strong>OpenAI</strong> — processes your entry text to power the AI features described above. Per OpenAI’s API policy, data sent through the API is <strong>not used to train their models</strong> and is retained only briefly for abuse monitoring.</li>
+  </ul>
+  <p>We only share what’s necessary for these services to function.</p>
+
+  <h2>Security</h2>
+  <ul>
+    <li>All network traffic uses TLS 1.3.</li>
+    <li>Data at rest is encrypted (AES-256).</li>
+    <li>Row-level security ensures only you can access your own data.</li>
+    <li>Authentication tokens are stored securely in the iOS Keychain.</li>
+  </ul>
+
+  <div class="callout">
+    <p>RemerAI is <strong>not</strong> end-to-end encrypted: because AI features require reading your entry text, our backend and OpenAI can process it. If this matters to you, keep especially sensitive details out of your entries.</p>
+  </div>
+
+  <h2>Your choices and rights</h2>
+  <ul>
+    <li><strong>Delete your account</strong> — Settings → “Delete account” permanently and immediately erases your account and all associated data (entries, people, threads, reminders, photos). This cannot be undone.</li>
+    <li><strong>Access / export</strong> — contact us (below) to request a copy of your data.</li>
+    <li><strong>Correct</strong> — you can edit or delete any entry, person, thread, or reminder in the app at any time.</li>
+  </ul>
+
+  <h2>Children</h2>
+  <p>RemerAI is not directed at children under 13 and we do not knowingly collect data from them.</p>
+
+  <h2>Changes to this policy</h2>
+  <p>We may update this policy as the app evolves. Material changes will be reflected by the “Last updated” date above.</p>
+
+  <h2>Contact</h2>
+  <p>Questions about your privacy or this policy? Email <a href="mailto:craig.huegli@ttms.ch">craig.huegli@ttms.ch</a>.</p>
+
+  <footer>RemerAI — a private daybook for the people in your life.</footer>
+</div>
+</body>
+</html>
