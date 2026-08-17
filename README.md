@@ -1,7 +1,11 @@
-# RemerAI — Privacy Policy
+# RemerAI — Privacy & Support
 
-Public privacy policy for the RemerAI iOS app.
+Public pages for the RemerAI iOS app.
 
-Live at: https://yesking-amazing.github.io/remerai-privacy/
+| Page | URL | Used for |
+|---|---|---|
+| Privacy policy | https://yesking-amazing.github.io/remerai-privacy/ | App Store Connect → App Privacy → Privacy Policy URL |
+| Support | https://yesking-amazing.github.io/remerai-privacy/support.html | App Store Connect → App Information → **Support URL** (required) |
 
-Source of truth is `index.html`. Keep it in sync with `PRIVACY.md` in the app repo.
+Keep `index.html` in sync with `PRIVACY.md` in the app repo — a policy that
+contradicts itself is worse than one that's slightly out of date.
